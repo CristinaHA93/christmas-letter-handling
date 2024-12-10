@@ -35,7 +35,7 @@ echo "Adding example item to the DynamoDB table..."
 awslocal dynamodb put-item \
 --table-name SantaChristmasLetters \
 --item '{
-"Email": {"S": "cristina.stoenescu93@gmail.com"},
+"Email": {"S": "cristinaTest@gmail.com"},
 "name": {"S": "Cristina"},
 "wishes": {"S": "Dear Santa, I wish a professional Lego."},
 "location": {"M": {"latitude": {"N": "48.8566"}, "longitude": {"N": "2.3522"}}}

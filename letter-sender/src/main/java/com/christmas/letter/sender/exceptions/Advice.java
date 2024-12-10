@@ -9,7 +9,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @ControllerAdvice
-public class LetterControllerAdvice extends ResponseEntityExceptionHandler {
+public class Advice extends ResponseEntityExceptionHandler {
 
   @ExceptionHandler(InvalidDataException.class)
   public ResponseEntity<Object> handleInvalidDataException(
