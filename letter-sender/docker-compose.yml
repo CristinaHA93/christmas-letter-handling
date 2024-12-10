@@ -1,0 +1,16 @@
+services:
+
+   localstack: # LocalStack container
+       image: localstack/localstack:latest
+       ports:
+         # Map the port, so you can access the API from the host machine
+         - 4566:4566 # LocalStack main endpoint
+         - 8000:8000 # DynamoDB local UI
+       environment:
+         - SERVICES=sns,sqs,dynamodb
+         - DEBUG=1
+         - PERSISTENCE=1
+       volumes:
+         - ./localstack-data:/var/lib/localstack #Persist data
+         - /var/run/docker.sock:/var/run/docker.sock
+         - ./src/main/resources/localstack-setup.sh:/etc/localstack/init/ready.d/script.sh
