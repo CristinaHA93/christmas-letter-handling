@@ -1,4 +1,4 @@
-package com.christmas.letter.sender;
+package com.christmas.letter.sender.controller;
 
 import com.christmas.letter.sender.model.Letter;
 import com.christmas.letter.sender.service.LetterService;
