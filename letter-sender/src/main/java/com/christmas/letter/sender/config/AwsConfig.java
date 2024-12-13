@@ -1,4 +1,4 @@
-package com.christmas.letter.sender.integrationTest.config;
+package com.christmas.letter.sender.config;
 
 import java.net.URI;
 import org.springframework.beans.factory.annotation.Autowired;
