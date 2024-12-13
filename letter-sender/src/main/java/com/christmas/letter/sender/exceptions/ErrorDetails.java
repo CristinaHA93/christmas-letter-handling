@@ -1,6 +1,7 @@
 package com.christmas.letter.sender.exceptions;
 
 import java.util.Date;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,5 +16,7 @@ public class ErrorDetails {
   private String message;
 
   private String details;
+
+  private List<String> reasons;
 
 }
