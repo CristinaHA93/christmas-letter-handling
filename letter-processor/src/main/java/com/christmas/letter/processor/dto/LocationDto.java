@@ -2,11 +2,13 @@ package com.christmas.letter.processor.dto;
 
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class LocationDto {
 
   @DecimalMin(value = "-90.0", inclusive = true, message = "Latitude must be between -90 and 90.")

@@ -4,7 +4,7 @@ import com.christmas.letter.processor.dto.LetterDto;
 import com.christmas.letter.processor.entities.Letter;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface LetterMapper {
 
   Letter toLetter(LetterDto letterDto);
